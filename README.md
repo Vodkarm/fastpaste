@@ -11,6 +11,10 @@
 
 # 📖 Documentation
 
+- *Here is a free & 24/7 hosted public endpoint*
+
+```https://api.strium.tech/```
+
 ## 📜 Create a new paste
 
 *You can create a paste with a simple get request*
