@@ -28,7 +28,7 @@ print(r.text)
 {"data": {"id": "y6s1qb", "secret": "// Nothing to see here :)", "url": "http://api.strium.tech/paste?id=y6s1qb"}, "success": true}
 ```
 
-** 🗑️ Delete a paste
+## 🗑️ Delete a paste
 
 *You can delete a paste with a simple get request*
 
@@ -45,7 +45,7 @@ print(r.text)
 {"success": True}
 ```
 
-** 👀 See a paste
+## 👀 See a paste
 
 *You can see a paste with a simple get request* **or** *by opening the link in your browser*
 
