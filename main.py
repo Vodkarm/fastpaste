@@ -7,7 +7,7 @@ app = Flask(__name__)
 def index():
 	return redirect("https://github.com/vodkarm/fastpaste#documentation")
 
-@app.route('/new', methods=["GET"])
+@app.route('/new', methods=["POST"])
 def new():
 	if request.args.get("content"):
 		id = ''.join(random.choice(string.ascii_lowercase + string.digits) for i in range(6))
@@ -31,7 +31,7 @@ def paste():
 	else:
 		return redirect(request.base_url.replace("/paste", "/"))
 	
-@app.route("/delete", methods=["GET"])
+@app.route("/delete", methods=["DELETE"])
 def delete():
 	if request.args.get("id") and request.args.get("secret"):
 		if json.load(open("secrets.json"))[request.args.get("id")] == request.args.get("secret"):
