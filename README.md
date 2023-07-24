@@ -5,7 +5,7 @@
 # ⭐ Features
 
 - 🧬 Simple installation (flask is the only one depedencie !)
-- ⚡ Fast & Easy to use (GET requests only !)
+- ⚡ Fast & Easy to use
 - ✔ Create, Delete, See pastes
 - ⚜ Short code
 
@@ -17,12 +17,12 @@
 
 ## 📜 Create a new paste
 
-*You can create a paste with a simple get request*
+*You can create a paste with a simple request*
 
 ```python
 import requests
 
-r = requests.get("https://api.strium.tech/new?content=" + input("Enter your text >>> "))
+r = requests.post("https://api.strium.tech/new?content=" + input("Enter your text >>> "))
 print(r.text)
 ```
 
@@ -34,12 +34,12 @@ print(r.text)
 
 ## 🗑️ Delete a paste
 
-*You can delete a paste with a simple get request*
+*You can delete a paste with a simple request*
 
 ```python
 import requests
 
-r = requests.get("https://api.strium.tech/delete?id=y6s1qb&secret=yourSecret")
+r = requests.delete("https://api.strium.tech/delete?id=y6s1qb&secret=yourSecret")
 print(r.text)
 ```
 
@@ -51,7 +51,7 @@ print(r.text)
 
 ## 👀 See a paste
 
-*You can see a paste with a simple get request* **or** *by opening the link in your browser*
+*You can see a paste with a simple request* **or** *by opening the link in your browser*
 
 ```python
 import requests
